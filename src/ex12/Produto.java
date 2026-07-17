@@ -32,28 +32,9 @@ public class Produto {
             }
         }
 
-        double valorProdutoFinal = 0;
-        switch (tipoPagamentoInt){
-            case 1:
-                valorProdutoFinal = valorProduto - (valorProduto * 0.15);
-                System.out.printf("No dinheiro o valor do produto com desconto fica: %.2f", valorProdutoFinal);
-                break;
-            case 2:
-                valorProdutoFinal = valorProduto - (valorProduto * 0.15);
-                System.out.printf("No PIX o valor do produto com desconto fica: %.2f", valorProdutoFinal);
-                break;
-            case 3:
-                valorProdutoFinal = valorProduto - (valorProduto * 0.1);
-                System.out.printf("No Credito a vista o valor do produto fica: %.2f", valorProdutoFinal);
-                break;
-            case 4:
-                System.out.println("No credito em 2x o valor do produto nao tem juros: " + valorProduto);
-                break;
-            case 5:
-                valorProdutoFinal = valorProduto + (valorProduto * 0.1);
-                System.out.printf("No credito em 3x ou mais o valor do produto com juros: " + valorProdutoFinal);
-                break;
-        }
+        TipoPagamento tipoPagamento = TipoPagamento.procurarCodPagamento(tipoPagamentoInt);
+        tipoPagamento.calcularDesconto(valorProduto);
+
     }
 
 }
