@@ -1,8 +1,5 @@
 package ex12;
 
-
-import java.util.Scanner;
-
 public enum TipoPagamento {
     DINHEIRO(1){
         @Override
