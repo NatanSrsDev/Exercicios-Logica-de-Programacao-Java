@@ -23,7 +23,9 @@ public class Main {
         double soma = a + b;
         System.out.println("A soma entre A & B é: " + soma);
         if (soma < c){
-            System.out.println("O resultado é menor que C: C = " + c);
+            System.out.println("O resultado é menor que C");
+        } else {
+            System.out.println("O resultado não é menor que C");
         }
 
     }
