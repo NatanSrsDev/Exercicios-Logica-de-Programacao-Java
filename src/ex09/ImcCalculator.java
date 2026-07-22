@@ -1,4 +1,4 @@
-package ex9;
+package ex09;
 
 import java.util.Locale;
 import java.util.Scanner;
