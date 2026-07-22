@@ -1,6 +1,6 @@
 package ex19;
 
-public class printTabuada {
+public class PrintTabuada {
     // 19 - Faça um algoritmo que imprima na tela a tabuada de 1 até 10.
     public static void main(String[] args) {
 
